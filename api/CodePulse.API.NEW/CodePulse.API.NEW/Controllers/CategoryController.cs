@@ -26,7 +26,7 @@ namespace CodePulse.API.NEW.Controllers
 		[Route("/api/AddCategories")]
 		public async Task<IActionResult> CreateCategory(CreateCategoryRequestDto createCategoryRequestDto)
 		{
-			CategoryDto response = null;
+			CategoryDto response;
 
 			if (createCategoryRequestDto != null)
 			{
